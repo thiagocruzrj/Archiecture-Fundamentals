@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using static ArchiectureFundamentals.Cases.Operation;
 
 namespace ArchiectureFundamentals
 {
@@ -16,8 +17,20 @@ namespace ArchiectureFundamentals
         public void ConfigureServices(IServiceCollection services)
         {
             #region RealLife
+
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserServices, UserServices>();
+
+            #endregion
+
+            #region LifeCycle
+
+            services.AddTransient<IOperationTransient, Operation>();
+            services.AddScoped<IOperationScoped, Operation>();
+            services.AddSingleton<IOperationSingleton, Operation>();
+            services.AddSingleton<IOperationSingletonInstance>(new Operation(Guid.Empty));
+            services.AddTransient<OperationService>();
+            
             #endregion
         }
 
