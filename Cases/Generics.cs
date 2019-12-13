@@ -1,6 +1,11 @@
 namespace ArchiectureFundamentals.Cases
 {
-    public class Generics
+
+    public interface IGenericRepository<T> where T : class
+    {
+        void Add(T obj);
+    }
+    public class GenericRepository<T> 
     {
         
     }
