@@ -38,6 +38,27 @@ namespace ArchiectureFundamentals
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
             #endregion
+
+            #region MultipleClasses
+            
+            services.AddTransient<ServiceA>();
+            services.AddTransient<ServiceB>();
+            services.AddTransient<ServiceC>();
+            services.AddTransient<Func<string, IService>>(servicesProvider => key => {
+                switch (key)
+                {
+                    case "A":
+                        return servicesProvider.GetService<ServiceA>();
+                    case "B":
+                        return servicesProvider.GetService<ServiceB>();
+                    case "C":
+                        return servicesProvider.GetService<ServiceC>();
+                    default:
+                        return null;
+                }
+            });
+
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
