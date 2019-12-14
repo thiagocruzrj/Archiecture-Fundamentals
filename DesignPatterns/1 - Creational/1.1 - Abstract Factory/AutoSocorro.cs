@@ -1,6 +1,6 @@
 using System;
 
-namespace DesignPatterns.AbstractFatory
+namespace DesignPatterns.AbstractFactory
 {
     // Client class
     public class AutoSocorro

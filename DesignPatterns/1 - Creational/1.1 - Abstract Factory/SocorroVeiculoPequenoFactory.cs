@@ -1,4 +1,4 @@
-namespace DesignPatterns.AbstractFatory
+namespace DesignPatterns.AbstractFactory
 {
     // Concrete Factory
     public class SocorroVeiculoPequenoFactory : AutoSocorroFactory

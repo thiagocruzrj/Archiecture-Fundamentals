@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace DesignPatterns.AbstractFatory
+namespace DesignPatterns.AbstractFactory
 {
     public class ExecucaoAbstractFactory
     {
