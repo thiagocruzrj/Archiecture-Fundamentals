@@ -36,25 +36,28 @@ namespace DesignPatterns
                     ExecucaoAbstractFactory.Executar();
                     break;
                 case '2':
-                    ExecucaoAbstractFactory.Executar();
+                    ExecucaoFactoryMethod.Executar();
                     break;
                 case '3':
-                    ExecucaoAbstractFactory.Executar();
+                    ExecucaoSingleton.Executar();
                     break;
                 case '4':
-                    ExecucaoAbstractFactory.Executar();
+                    ExecucaoAdapter.Executar();
                     break;
                 case '5':
-                    ExecucaoAbstractFactory.Executar();
+                    ExecucaoFacade.Executar();
                     break;
                 case '6':
-                    ExecucaoAbstractFactory.Executar();
+                    ExecucaoComposite.Executar();
                     break;
                 case '7':
-                    ExecucaoAbstractFactory.Executar();
+                    ExecucaoCommand.Executar();
                     break;
                 case '8':
-                    ExecucaoAbstractFactory.Executar();
+                    ExecucaoStrategy.Executar();
+                    break;
+                case '9':
+                    ExecucaoObserver.Executar();
                     break;
             }
 

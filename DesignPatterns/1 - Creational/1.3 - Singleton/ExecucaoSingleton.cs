@@ -2,7 +2,7 @@ using System;
 
 namespace DesignPatterns.Singleton
 {
-    public class Singleton
+    public class ExecucaoSingleton
     {
         public static void Executar()
         {
