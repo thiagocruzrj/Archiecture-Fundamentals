@@ -1,5 +1,10 @@
 ﻿using System;
+using DesignPatterns.AbstractFactory;
 using DesignPatterns.AbstractFatory;
+using DesignPatterns.Adapter;
+using DesignPatterns.Facade;
+using DesignPatterns.FactoryMethod;
+using DesignPatterns.Singleton;
 
 namespace DesignPatterns
 {
