@@ -1,6 +1,5 @@
 ﻿using System;
 using DesignPatterns.AbstractFactory;
-using DesignPatterns.AbstractFatory;
 using DesignPatterns.Adapter;
 using DesignPatterns.Command;
 using DesignPatterns.Composite;
@@ -13,29 +12,33 @@ namespace DesignPatterns
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            Console.WriteLine("Escolha a Opção: ");
-            Console.WriteLine("-------------------- ");
+            Console.WriteLine("Escolha a operação:");
+            Console.WriteLine("------------------------");
             Console.WriteLine("Creational Patterns");
-            Console.WriteLine("-------------------- ");
-            Console.WriteLine("1 - Abstract Factory ");
-            Console.WriteLine("2 - Factory Method ");
-            Console.WriteLine("3 - Singleton ");
+            Console.WriteLine("------------------------");
+            Console.WriteLine("1 - Abstract Factory");
+            Console.WriteLine("2 - Method Factory");
+            Console.WriteLine("3 - Singleton");
+            Console.WriteLine("------------------------");
             Console.WriteLine("Structural Patterns");
-            Console.WriteLine("-------------------- ");
+            Console.WriteLine("------------------------");
             Console.WriteLine("4 - Adapter");
             Console.WriteLine("5 - Facade");
-            Console.WriteLine("-------------------- ");
-            Console.WriteLine("6 - Command");
-            Console.WriteLine("7 - Strategy");
-            Console.WriteLine("8 - Observer");
-            Console.WriteLine("-------------------- ");
+            Console.WriteLine("6 - Composite");
+            Console.WriteLine("------------------------");
+            Console.WriteLine("Behavioral Patterns");
+            Console.WriteLine("------------------------");
+            Console.WriteLine("7 - Command");
+            Console.WriteLine("8 - Strategy");
+            Console.WriteLine("9 - Observer");
+            Console.WriteLine("------------------------");
 
             var opcao = Console.ReadKey();
 
             Console.WriteLine("");
-            Console.WriteLine("---------------------");
+            Console.WriteLine("------------------------");
             Console.WriteLine("");
 
             switch (opcao.KeyChar)
