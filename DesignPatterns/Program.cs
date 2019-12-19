@@ -2,6 +2,7 @@
 using DesignPatterns.AbstractFactory;
 using DesignPatterns.AbstractFatory;
 using DesignPatterns.Adapter;
+using DesignPatterns.Command;
 using DesignPatterns.Composite;
 using DesignPatterns.Facade;
 using DesignPatterns.FactoryMethod;
