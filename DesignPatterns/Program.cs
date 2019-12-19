@@ -7,6 +7,7 @@ using DesignPatterns.Composite;
 using DesignPatterns.Facade;
 using DesignPatterns.FactoryMethod;
 using DesignPatterns.Singleton;
+using DesignPatterns.Strategy;
 
 namespace DesignPatterns
 {
